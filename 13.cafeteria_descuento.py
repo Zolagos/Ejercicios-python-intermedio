@@ -20,13 +20,21 @@ while op !=5:
     elif op == 4:
         total_cliente = total_caf + total_cap + total_pas
         if total_cliente > 20000: 
-            total_cliente = total_cliente * 0.10
+            total_cliente = total_cliente * 0.90
         total_dia+= total_cliente
         print(f"El total del cliente es:{total_cliente}")
         total_caf = 0
         total_cap = 0
         total_pas = 0
     elif op == 5:
+        total_cliente = total_caf + total_cap + total_pas
+        if total_cliente > 20000: 
+            total_cliente = total_cliente * 0.90
+        total_dia+= total_cliente
+        print(f"El total del cliente es:{total_cliente}")
+        total_caf = 0
+        total_cap = 0
+        total_pas = 0
         print("Saliendo")
 print(f"Total del dia:{total_dia}")
     
